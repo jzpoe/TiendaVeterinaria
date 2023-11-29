@@ -1,0 +1,86 @@
+.navbar {
+    height: 100vh; /* Toma el 100% de la altura de la ventana */
+    width: 200px; /* Ancho del navbar */
+    background-color: #b71c1c; /* Color de fondo */
+    position: fixed; /* Fijar en la posición */
+    left: 0; /* Fijar a la izquierda */
+    top: 0; /* Fijar en la parte superior */
+    display: flex;
+    flex-direction: column; /* Los elementos están en una columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    padding-top: 20px;
+    
+  }
+
+    .navbar ul {
+        list-style: none;
+    padding: 0;
+    margin: 0;
+      }
+      
+      .navbar ul li {
+        margin-bottom: 90px;
+    }
+      
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+      }
+      .mobile-menu-toggle{
+        display: none;
+      }
+
+      .navbar a:hover {
+        background-color: #555;
+    }
+    
+    /* Estilo para el enlace activo */
+    .navbar a.active {
+        background-color: #4CAF50;
+    }
+
+    .carrito{
+      position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+    cursor: pointer;
+  }
+      
+      /* Estilos para dispositivos móviles */
+      @media only screen and (max-width: 767px) {
+
+        .navbar{
+            background-color: transparent;
+            
+        }
+
+        .navbar ul {
+            font-size: 50px;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          top: 60px;
+          left: 0;
+          width: 70%;
+          border-radius: 20px 10px 20px 50px;
+          background-color: rgba(255, 255, 255, 0.4); /* Ajusta el color y la opacidad según tus necesidades */
+
+        }
+      
+        .navbar.mobile-menu-open ul {
+          display: flex;
+        }
+      
+        .navbar .mobile-menu-toggle {
+          display: block;
+          cursor: pointer;
+          font-size: 20px;
+          margin-right: 130px;
+          font-size: 30px;
+        }
+      }
+
+      
+
+      

@@ -1,0 +1,42 @@
+.container-main {
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+
+}
+
+.container-main:hover input {
+    background-color: transparent;
+    height: 50px;
+  width: 300px; /* O cualquier ancho deseado cuando se pasa el ratón */
+}
+
+
+
+
+input {
+    background-color: transparent;
+  border-radius: 20px ;
+  outline: none;
+  cursor: pointer; /* Cambia el cursor a una mano (por ejemplo) cuando esté sobre el input */
+  height: 50px;
+  width: 30px; /* Ancho inicial cero */
+  transition: width 0.7s; /* Transición suave para la propiedad width */
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    flex-direction: column; /* Cambiamos la dirección de la columna en dispositivos más pequeños */
+    text-align: center; /* Centramos el texto en dispositivos más pequeños */
+  }
+
+  /* Restauramos el ancho del input a su estado inicial en dispositivos más pequeños */
+  .container-main input {
+    width: 30px;
+  }
+}

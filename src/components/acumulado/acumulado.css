@@ -1,0 +1,6 @@
+.volver{
+    position: fixed;
+  top: 20px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+  right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+  cursor: pointer;
+}

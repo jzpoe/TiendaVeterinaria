@@ -1,0 +1,18 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+background-image: url('/img/imagenes/accesorios-mascotas-concepto-naturaleza-muerta-cuencos-varios-tamanos.jpg');
+background-image:  no-repeat center center fixed;
+background-size: cover;
+margin: 0; /* Elimina el margen predeterminado del cuerpo */
+padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+height: 100vh; /* Ajusta la altura al 100% de la ventana del navegador */
+}
+
+@media (max-width: 768px) {
+  :root {
+    background-attachment: scroll; /* Cambia a desplazamiento para dispositivos más pequeños */
+  }
+}
+
+
+

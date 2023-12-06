@@ -12,17 +12,27 @@ export const dataContext = createContext();
 const DataProvider = ({children}) => {
     const [data, setData] = useState([])
     const [cart, setCart] = useState([])
+    const [modal, setModal] = useState([])
+
 
 
     useEffect(() => {
       axios("imagenes.json").then((res) => {
         setData(res.data);
         console.log(res.data);
+
+        axios("contenidoCards.json").then((res) => {
+          setModal(res.data);
+          console.log(res.data);
+        })
+
       });
     }, []);
 
+  
+
   return (
-    <dataContext.Provider value={{data,cart, setCart}}>
+    <dataContext.Provider value={{modal,data,cart, setCart}}>
       {children}
     </dataContext.Provider>
   )

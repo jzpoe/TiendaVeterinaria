@@ -1,0 +1,122 @@
+.container-swiper {
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: auto; /* Esto mantiene la proporción de la imagen */
+}
+
+.container-parrafoVete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafoVete {
+  position: absolute;
+  top: 40%;
+  left: 330px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Puedes ajustar el color del texto según tus necesidades */
+  font-size: 40px;
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.parrafoVete span {
+  color: red;
+}
+
+.cotenidoTiendaOnline {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+  top: 50%;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.TiendaOnline {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-wrap: balance; /*para balancear el exto y nse vea ordenado */
+
+}
+
+.TiendaOnline span {
+  color: red;
+}
+@media (max-width: 601px) {
+  .container-swiper{
+width: 100%;
+  }
+  .image-container {
+    height: 70vh;
+    width: 100%;
+    
+  }
+  .parrafoVete {
+    width: 20vw;
+    font-size: 26px;
+    top: 10vh;
+    left: 7vh;
+  }
+
+  .cotenidoTiendaOnline {
+    width: 70vw;
+    height: auto;
+    top: 20%;
+    margin: 0;
+  }
+
+  .TiendaOnline {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .container-swiper {
+    /* Ajusta los estilos según tus necesidades */
+    width: 100%;
+  }
+
+  .image-container {
+    /* Ajusta los estilos según tus necesidades */
+    height: 70vh;
+    width: 100%;
+  }
+
+  .parrafoVete {
+    /* Ajusta los estilos según tus necesidades */
+    width: 5vw;
+    font-size: 30px;
+    top: 15vh;
+    left: 5vh;
+  }
+
+  .cotenidoTiendaOnline {
+    /* Ajusta los estilos según tus necesidades */
+    width: 80vw;
+    height: auto;
+    top: 25%;
+    width: 70vw;
+    height: 120px;
+  }
+
+  .TiendaOnline {
+    /* Ajusta los estilos según tus necesidades */
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,203 @@
+ .container-tarjetas {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1600px;
+}
+   
+  
+
+.tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 2200px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.imagen-container-tarjeta {
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  height: 250px;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-top: 16px; /* Ajusta el margen entre la imagen y el párrafo según tus necesidades */
+  margin-right: 150px; 
+}
+
+
+.parrafo-tarjetas {
+  margin-bottom: 16px; /* Ajusta el margen entre el párrafo y la imagen según tus necesidades */
+  width: 70%;
+  margin-left: 100px;
+  text-wrap: balance; /*para balancear el exto y nse vea ordenado */
+}
+
+.tarjetas1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 2200px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+.parrafo-tarjetas1 {
+  margin-bottom: 16px; /* Ajusta el margen entre el párrafo y la imagen según tus necesidades */
+  width: 70%;
+  margin-left: 300px;
+  text-wrap: balance; /*para balancear el exto y nse vea ordenado */
+
+}
+
+.imagen-container-tarjeta1 {
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  height: 250px;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-left: 100px;
+}
+
+.tarjetas2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 2000px;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+.contenido-tarjetas2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-container-tarjeta2{
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  height: 250px;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-top: 16px; /* Ajusta el margen entre la imagen y el párrafo según tus necesidades */
+  margin-left: 200px;
+}
+
+.parrafo-tarjetas2{
+  margin-bottom: 16px; /* Ajusta el margen entre el párrafo y la imagen según tus necesidades */
+  width: 60%;
+  margin-left: 100px;
+  text-wrap: balance; /*para balancear el exto y nse vea ordenado */
+
+}
+
+.tarjetas3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 2000px;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 100px;
+}
+.parrafo-tarjetas3{
+  margin-bottom: 16px; /* Ajusta el margen entre el párrafo y la imagen según tus necesidades */
+  width: 70%;
+  margin-left: 300px;
+  text-wrap: balance; /*para balancear el exto y nse vea ordenado */
+
+}
+
+.imagen-container-tarjeta3{
+  max-width: 600px; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  height: 250px;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-left: 100px;
+}
+
+@media (max-width: 600px) {
+  .container-tarjetas {
+    
+    width: 50px;
+    
+    
+  }
+  .parrafo-tarjetas{
+    font-size: 15px;
+    margin: 20px;
+    padding: 15px;
+    
+  }
+  
+  .imagen-container-tarjeta {
+    width: 150px;
+    height: 40%;
+  }
+  .tarjetas1{
+    width: auto;
+    margin-left: 300px;
+  }
+  
+  .parrafo-tarjetas1{
+    font-size: 15px;
+    margin: 20px;
+    padding: 15px;
+  
+
+  }
+
+  .imagen-container-tarjeta1 {
+    width: 150px;
+    height: 40%;
+    
+  }
+
+  .tarjetas2{
+    
+    margin-left: 350px;
+  }
+
+  
+.parrafo-tarjetas2{
+  font-size: 15px;
+  width: 200px;
+  height: 100%;
+  margin: 10px;
+
+  padding: 10px;
+  margin-left: 100px;
+}
+ 
+ .imagen-container-tarjeta2{
+ 
+  width: 130px;
+  height: 150px;
+  margin :0 ;
+ }
+ .contenido-tarjetas2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+ }
+ .contenido-tarjetas2 h1{
+  font-size: 20px;
+ }
+
+ .parrafo-tarjetas3{
+  font-size: 15px;
+  width: 190px;
+  margin: 10px;
+}
+.contenido-tarjeta3{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.imagen-container-tarjeta3{
+  width: 130px;
+  height: 150px;
+  margin-left: 450px;
+}
+.contenido-tarjeta3 h1{
+  font-size: 20px;
+ }
+}

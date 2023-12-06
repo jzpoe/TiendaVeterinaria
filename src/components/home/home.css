@@ -1,0 +1,41 @@
+
+
+    .container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 500px;
+    height: auto;
+    margin-left: 35%;
+    }
+
+
+    .titulo{
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .parrafo-card{
+        font-size: 10px;
+        color: blue;
+    }
+
+    .card-container{
+        width: auto;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px;
+    }
+
+    .home-tarjetas{
+
+    background-color: rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: 500px;
+    padding: 10px;
+    border: 0 40x 8px rgba(0, 0, 0, 0.1);
+    margin-left: 5%;
+    }
+

@@ -1,24 +1,36 @@
+
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Acumulado from "./components/acumulado/Acumulado";
-import Buscar from "./components/buscar/Buscar";
-import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
 import DataProvider from "./dataContex/DataContext";
+import Home from "./components/home/Home";
+import SwiperMain from "./components/main/swiper/SwiperMain";
 
 function App() {
   return (
+    
     <DataProvider>
+      
       <BrowserRouter>
         <Navbar />
+        
         <Routes>
+          <Route path="/" element={<SwiperMain />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Acumulado" element={<Acumulado />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/Buscar" element={<Buscar />} />
         </Routes>
+        
       </BrowserRouter>
+      
+   
     </DataProvider>
+    
   );
 }
 
 export default App;
+
+
+

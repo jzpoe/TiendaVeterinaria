@@ -1,72 +1,191 @@
-.containerMain{
-    flex: 1;
-    background-color: transparent;
-    width: 170vh;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 300px;
-    margin-top: 10px;
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1500px;
 
 }
 
-.imagenesArray {
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #888;
+  
+  
+}
+.modal-content img{
+  border-radius: 100px;
+
+  padding: 70px;
+  width: 500px;
+  height: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 5%; /* Ajusta la distancia desde la parte superior según tus necesidades */
+  right: 500px; /* Ajusta la distancia desde la derecha según tus necesidades */
+  cursor: pointer;
+
+  color: #aaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  .containerMain {
+    background-color: transparent;
     display: flex;
-    flex-wrap: wrap; /* Hace que las imágenes se envuelvan a la siguiente línea si no hay suficiente espacio */
+    align-items: center;
+    justify-content: space-between;
+    
 
   }
+
+.imagenesArray {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+p {
+  color: green;
+  font-size: 25px;
+}
+
+.imagenWrapper {
+  width: 200px; /* Ancho de cada imagen */
+  height: 250px; /* Altura de cada imagen */
+  margin: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.imagenWrapper img {
+  width: 90%; /* Ajusta el ancho de cada imagen según tus necesidades */
+  height: 20vh;
+  margin: 10px; /* Agrega un margen entre las imágenes */
+  border-radius: 90px 10px 5px;
+}
+.imagenWrapper p {
+  width: 100px;
+  height: auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Ajusta el color y la opacidad según tus necesidades */
+
+  display: none;
+}
+.imagenWrapper.selected {
+
+    width: 200px;
+    height: auto  ;
+  } 
+
+.imagenWrapper.selected p {
+  display: block;
   
+}
+.container-btn {
+  text-align: center; /* Puedes ajustar esto según tus necesidades */
+}
+
+.btn-comprar {
+  background-color: #3498db; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón (arriba/abajo izquierda/derecha) */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+.btn-comprar:hover {
+  background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+@media (max-width: 600px) {
+  .close {
+    font-size: 50px; /* Reduce el tamaño del botón de cierre */
+    right: 40px;
+    margin-top: 100px;
+    color: black;
+    
+  }
+  
+
+  .modal-content img {
+    width: 100%; /* Ajusta el ancho de la imagen para que se ajuste a la modal */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen en la modal */
+  }
+
+  .modal-content {
+    
+    width: 100%; /* Ajusta el ancho de la modal para centrar la imagen */
+    height: 50%;
+    margin: 50% auto; /* Centra la modal en la pantalla */
+  }
+
+  .imagenesArray {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .imagenWrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .modal-content img{
+    
+    width: 250px;
+   height: 250px;
+  }
+  .modal-content{
+    width: 200px;
+    top: 0;
+  }
+  .modal{
+    top: 0;
+  }
+  .container-btn {
+    text-align: center; /* Puedes ajustar esto según tus necesidades */
+  }
+  
+  .btn-comprar {
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón (arriba/abajo izquierda/derecha) */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+  }
+  
+  .btn-comprar:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+  }
  
-  p{
-    color: green;
-    font-size: 25px
-
-  }
-
-  .imagenWrapper {
-    
-    border-radius: 10px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* offsetX offsetY blurRadius color */
-
-  }
-  .imagenWrapper img {
-    
-    width: 90%; /* Ajusta el ancho de cada imagen según tus necesidades */
-    height: 30vh;
-    margin: 10px; /* Agrega un margen entre las imágenes */
-    border-radius: 90px  10px 5px;
-  }
-  .imagenWrapper p {
-    width: 100px;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.4); /* Ajusta el color y la opacidad según tus necesidades */
-
-    display: none;
-  }
-  .imagenWrapper.selected {
-    
-    width: auto;
-    height: 400px;
-    transition: width 0.7s;
-  }
-  
-  .imagenWrapper.selected p {
-    display: block;
-  }
-
-  @media (max-width: 768px) {
-    .containerMain {
-      width: 100%;
-      margin-top: 200%;
-      margin-left: 20px;
-    }
-  
-    .imagenesArray {
-      justify-content: center;
-      
-    }
-  }
+ 
+}

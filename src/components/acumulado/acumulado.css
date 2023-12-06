@@ -1,6 +1,41 @@
+.productosAcumulados {
+  display: flex;
+  justify-content: space-around; /* Otra opción es 'space-between' dependiendo del espacio deseado entre las imágenes */
+  align-items: center;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no hay suficiente espacio */
+  margin: 150px; /* Ajusta según sea necesario */
+margin-left: 300px;
+}
+
+.productoAcumulado {
+  margin: 50px; /* Ajusta según sea necesario */
+}
+
+.container-productoAcumulado {
+    background-color: rgba(0, 0, 0, 0.5);
+  width: 500px; /* Ajusta el ancho de cada contenedor según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.container-productoAcumulado img {
+  width: 50%; /* Ajusta el ancho de la imagen para que se ajuste al contenedor */
+  height: auto;
+  margin: 10px;
+}
+
 .volver{
-    position: fixed;
-  top: 20px; /* Ajusta la distancia desde la parte superior según tus necesidades */
-  right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
-  cursor: pointer;
+  position: fixed;
+top: 20px; /* Ajusta la distancia desde la parte superior según tus necesidades */
+right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .productosAcumulados {
+    flex-direction: column; /* Cambia a dirección de columna en pantallas más pequeñas */
+  }
 }

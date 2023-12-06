@@ -6,7 +6,13 @@ const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isNavbarVisible, setNavbarVisible] = useState(true);
   
+  const handleSubmenuHover = () => {
+    setNavbarVisible(true);
+  };
 
+  const handleSubmenuLeave = () => {
+    setNavbarVisible(false);
+  };  
 
   const handleMobileMenuToggle = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -17,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
+    <div className={`navbar ${isMobileMenuOpen ? "mobile-menu-open" : ""} `}>
       {/* Mobile Menu Toggle Button */}
       <div className="mobile-menu-toggle" onClick={handleMobileMenuToggle}>
         ☰
@@ -25,10 +31,15 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <ul>
-        <li>
-        <Link to= "/">
-          <a href="#">
-            <svg
+        <li className="menu-item">
+          
+        <Link to= "/SwiperMain" className="containerHome" >
+          <a href="#"
+          className="containerHome"
+          onMouseOver={handleSubmenuHover}
+          onMouseLeave={handleSubmenuLeave}
+          >
+            <svg 
               width="46"
               height="46"
               fill="none"
@@ -42,12 +53,18 @@ const Navbar = () => {
               <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <path d="M9 22V12h6v10"></path>
             </svg>
+            
           </a>
+          <div className="submenu">
+      {/* Aquí puedes agregar más elementos para tu submenú */}
+      <Link to="/Main">Submenu 1</Link>
+      <Link to="/submenu2">Submenu 2</Link>
+    </div>
           </Link>
         </li>
         
         <li>
-        <Link to="/Main">
+        <Link >
             {" "}
             <a href="#">
               <svg
@@ -67,7 +84,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-        <Link to="/Buscar">
+        <Link to="/">
           <a href="#">
             <svg
               width="46"
@@ -125,8 +142,11 @@ const Navbar = () => {
     </div>
         </li>
       </ul>
+     
+        
     </div>
   );
 };
+
 
 export default Navbar;

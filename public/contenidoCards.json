@@ -1,0 +1,14 @@
+ [
+    {
+        "title": "Contenido de la primera tarjeta",
+        "description": "Descripción de la primera tarjeta"
+      },
+      {
+        "title": "Contenido de la segunda tarjeta",
+        "description": "Descripción de la segunda tarjeta"
+      },
+      {
+        "title": "Contenido de la tercera tarjeta",
+        "description": "Descripción de la tercera tarjeta"
+      }
+]
